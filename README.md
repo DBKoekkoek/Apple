@@ -95,7 +95,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | Daan     | Chris          | Safa    | Red       |
-  | ---            | ---                | ---          | ---              |
+  | ---            | ---                | Css selectors, algemeen        | ---              |
   | Foto grote aanpassen 
   |  in de canvas| en dit             | en ik dit    | en dan ik dat    |
   |  | dit als er tijd is | nog een punt | dit wil ik zeker |
