@@ -3,3 +3,113 @@ body {
    
    justify-content: space-between;
 }
+
+/****************/
+/* Nav */
+/****************/
+
+header nav {
+   background-color: rgb(67,67,68);
+}
+
+header li {
+   display: flex;
+}
+
+
+/****************/
+/* HEADER */
+/****************/
+
+
+header section {
+height: 35em;
+width: 100%;
+text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+h1 {
+   font-weight: lighter;
+   padding: 0em  2em;
+   font-size: 2em;
+   font-weight: 500;
+   max-width: 100%;
+   height: auto;
+
+}
+
+header section h2 {
+   font-weight: lighter;
+   padding: 0em  2em;
+   font-size: 1em;
+   font-weight: 300;
+
+}
+
+header section p {
+   font-weight: lighter;
+   padding: 0em  2em;
+   font-size: 1em;
+   font-weight: 300;
+   opacity: 40%;
+}
+
+header section a {
+   font-weight: lighter;
+   padding: 0em  2em;
+   font-size: 1em;
+   font-weight: 300;
+   border-style: none;
+   font-style: normal;
+   color:darkcyan
+}
+
+header section img {
+   height: 16em;
+}
+
+
+
+/****************/
+/* FILM ARTIKEL */
+/****************/
+
+
+article {
+   background-image: url(../video/small_2x.mp4);
+   height: 10000000em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section img {
+   max-width: 100%;
+}
