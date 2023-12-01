@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+Daan
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+Rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface (maar ik doe ook deels responsive, zodat ik het wel begrijp)
  
 </details>
 
@@ -169,16 +169,19 @@ Ik heb een stap gemaakt naar de tweede pagina. Waar ik een andere aanpak neem aa
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  ### Stand van zaken
+IK ben relatief ver zover ik weet. De code is wel lastig, en ik heb veel problemen gehad met bepaalde manieren van flexbox en posistion gebruiken. Waardoor ik extra wit ruimte krijg die ik niet wel. Daarnaast moet ik nu bijna de laatste dingen focussen op Javascript en mijn eerste pagina finetune en details goed verwerken. Maar bulk is klaar denk ik. 
+Ik heb een stap gemaakt naar de tweede pagina. Waar ik een andere aanpak neem aan het begin. Zodat het hopelijk wat lekkerder loopt. Eerst HTML echt goed hebben en dan pas CSS netjes maken.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Daan    | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  |1. Flex box inconsistenties 
+2. CSS en welke gebruikt moeten worden, omdat je meerdere mappen hebt
+3. Wanneer Grid? In mijn html CSs | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
