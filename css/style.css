@@ -1,85 +1,308 @@
-body {
-   border: 0;
-   
-   justify-content: space-between;
+*{
+   margin: 0;
+   margin-top: .5em;
+   padding: 0%;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center;
+
 }
 
+* a {
+   text-decoration: none;
+   color: #66a2df;
+
+}
 /****************/
 /* Nav */
 /****************/
 
 header nav {
+   z-index: 1;
+   background: 90%;
    background-color: rgb(67,67,68);
+   height: 4em;
+   width: 100%;
+   position: fixed;
+   margin-top: -2.1em;
 }
 
-header li {
-   display: flex;
+header nav button {
+   justify-content: center;
+   margin-top: 1.8em;
+   background: none;
+   border: none;
+   padding: 0 1em;
+   gap: .2em;
 }
+
+
+
+#menu {
+   padding-right: 17em;
+}
+
+
+
+/* Nav animatie voor hamburger menu */
+header nav ul {
+   background-color: black;
+   color: aliceblue;
+   font-style: none;
+   height: 0; /* initially hide the menu */
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   padding-top: 1em;
+   z-index: 1;
+   transition: height 0.3s ease; /* smooth transition for the menu */
+
+}
+
+header nav ul.show {
+   height: 60em; /* show the menu when the 'show' class is added */
+}
+
+
+header nav ul li {
+   font-size: 1.8em;
+   color: white;
+   text-align: left;
+   padding-left: 2em;
+   
+}
+
+
 
 
 /****************/
 /* HEADER */
 /****************/
-
-
 header section {
-height: 35em;
+padding-top: 6em ;
 width: 100%;
 text-align: center;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+position:static;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+gap: 1;
 }
+
 
 h1 {
    font-weight: lighter;
-   padding: 0em  2em;
-   font-size: 2em;
    font-weight: 500;
    max-width: 100%;
    height: auto;
+   font-size: 2em;
+   padding: 0 3em;
 
 }
 
 header section h2 {
    font-weight: lighter;
-   padding: 0em  2em;
-   font-size: 1em;
+   font-size: 1.2em;
    font-weight: 300;
+   padding: 0 3.4em;
 
 }
 
 header section p {
    font-weight: lighter;
-   padding: 0em  2em;
    font-size: 1em;
    font-weight: 300;
    opacity: 40%;
+   padding-top: 1em;
 }
 
 header section a {
    font-weight: lighter;
-   padding: 0em  2em;
    font-size: 1em;
    font-weight: 300;
-   border-style: none;
-   font-style: normal;
-   color:darkcyan
+   position: relative;
+   left: 0.2em;
+   top: 1em;
 }
 
 header section img {
-   height: 16em;
+   width: 100%;
+   height: auto;
+   min-width: 50em;
+   object-fit: cover;
+   
+   
+
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+/* TWEEDE ARTIKEL MET FILMPJE */
+/****************/
+
+article:first-of-type {
+   position: inherit;
+   height: 51em;
+   font-size: .69em;
+   color: white;
+   font-weight: 100;
+
+}
+
+article:first-of-type img  {
+   justify-content: center;
+   position: relative;
+   top: 31em;
+   width: 10em;
+   height: auto;
+   
+}
+
+article:first-of-type  h2{
+   position: relative;
+   font-size: 1.6em;
+   top: 14em;
+   padding: 6em;
+   font-weight: 200;
+}
+
+article:first-of-type section  {
+   display: flex;
+   justify-content: center;
+   position: static;
+   
+}
+
+
+article:first-of-type a  {
+   position: relative;
+   font-weight: 300;
+   top: 9em;
+   left: 1.4em;
+   font-size: 1.5em;
+   border-style: none;
+   background-color: white;
+    display: inline-block;
+   justify-content: center;
+   color: black;
+   padding: 0.8em;
+
+   border-top-left-radius: 1.1em; /* Left half-circle */
+   border-bottom-left-radius: 1.1em;
+   border-top-right-radius: 1.1em; /* Right half-circle */
+   border-bottom-right-radius: 1.1em;
+}
+
+article:first-of-type button  {
+   position: relative;
+   top: 8.5em;
+   left: 3em;
+   height: 2em;
+   width: 2em;
+   font-size: 2em;
+   border-style: none;
+   background-color: grey;
+   padding: 0em 1em;
+   border-radius: 100%;
+   
+}
+
+article:first-of-type video {
+   object-fit: cover;
+   position: absolute;
+   right: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   max-height: 52em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+/* MEERDERE ARTIKELEN */
+/****************/
+article:nth-child(3)  {
+   width: 100%;
+   text-align: center;
+   position:static;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 1;
+   color: black;
+}
+
+
+article:nth-child(3) section img:nth-child(1) {
+   position: absolute;
+   object-fit: cover;
+   width: 100%;
+   height: 50em;
+   max-height: 30em;
+   z-index: -1;
+
+}
+
+/*Div als placeholder*/
+article:nth-child(3) section {
+   height: 30em;
+   width: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 1;
+}
+
+article:nth-child(3) section h3 {
+   padding-top: 1em;
+   font-size: 2em;
+   font-weight: 500;
+}
+
+article:nth-child(3) section a {
+   position: relative;
+   top: 1em;
+   font-size: 1em;
+   font-weight: 300;
 }
 
 
 
 /****************/
-/* FILM ARTIKEL */
+/* ZWARTE LAYOUT*/
 /****************/
 
-
-article {
-   background-image: url(../video/small_2x.mp4);
-   height: 10000000em;
+article:nth-child(3) section:nth-child(1) {
+   color: white;
 }
 
 
@@ -93,23 +316,96 @@ article {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section img {
-   max-width: 100%;
+/****************/
+/* FILMS APPLE + */
+/****************/
+article:nth-of-type(3) {
+   display:flex;
+   overflow-x:auto;
+   scroll-snap-type: x mandatory;
+   overscroll-behavior: contain auto;
+   -webkit-overflow-scrolling: touch;
+   gap: 1em
 }
+
+article:nth-of-type(3) section {
+   flex-basis: 1em;
+   align-items:center;
+   scroll-snap-align: center;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   height: 31em;
+}
+
+
+article:nth-of-type(3) img {
+   position: relative;
+   bottom: 6.5em;
+   width: 14em;
+   height: auto;
+   object-fit: cover;
+   z-index: -1;
+}
+
+
+article:nth-of-type(3) h3 {
+   position: relative;
+   top: 20em;
+   color: white;
+   font-weight:300;
+}
+
+article:nth-of-type(3)  p {
+   position: relative;
+   top: 23em;
+   color: white;
+   font-weight: 100;
+   font-size: medium;
+}
+
+article:nth-of-type(3) button {
+   position: relative;
+   top: 23em;
+   color: black;
+   font-weight: 400;
+   padding-left: 1.5em;
+   padding-right: 1.5em;
+   font-size: medium;
+   background-color: white;
+   border-top-left-radius: 1.4em; /* Left half-circle */
+   border-bottom-left-radius: 1.4em;
+   border-top-right-radius: 1.4em; /* Right half-circle */
+   border-bottom-right-radius: 1.4em;
+   border: none;
+}
+
+figure section {
+   position: relative;
+   bottom: 22em;
+   gap: 12em;
+}
+
+
+
+
+
+/****************/
+/* FOOTER + */
+/****************/
+
+footer {
+   height: 59em;
+   background-color:rgb(230, 230, 230);
+}
+
+footer p {
+   font-size: .8em;
+   padding: 1em 2em;
+   text-align: left;
+   font-weight: 100;
+   color:rgb(100, 100, 100) ;
+   font-size: .68;
+   line-height: 130%;
+}
+
