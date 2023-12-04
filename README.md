@@ -22,11 +22,17 @@ Daan
 Rood
 
   #### Je focus:
-  Surface (maar ik doe ook deels responsive, zodat ik het wel begrijp)
+  Surface (maar ik doe ook deels responsive, zodat ik het wel begrijp).
  
 </details>
+Mijn Surface stijl onderdelen zijn:
+1. Light and Dark mode
+2. Eigen Theme hebben
+3. Video en Geluid
+4. SVG en Animaties erin
+5. Animaties algemeen
 
-
+De manieren hoe ik deze elementen heb toegevoegd zal ik laten zien in mijn website in de comments.
 
 
 
@@ -36,18 +42,20 @@ Rood
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  Link Pagina 1: https://www.apple.com/
+
+  Link Pagina 2: https://www.apple.com/ipad/why-ipad/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home page van Apple 
+  <img width="622" alt="Screenshot 2023-11-20 at 16 17 32" src="https://github.com/DBKoekkoek/Apple/assets/151542447/2d19bd15-4161-4c16-8574-6fe7f86cea43">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
-</details>
+  <img width="1512" alt="Screenshot 2023-12-04 at 15 10 25" src="https://github.com/DBKoekkoek/Apple/assets/151542447/f1f013e9-e26a-4ee3-bcf3-78f885522363">
 
+</details>
+De verschillen in de pagina, zijn het grootst. Apple z'n huisstijl is erg hetzelfde. Ik wilde een andere pagina pakken die meer verschillen heeft. Kan ik ook meer mijn skills laten zien.
 
 
 ## Toegankelijkheidstest 1/2 (week 1)
