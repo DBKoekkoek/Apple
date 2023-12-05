@@ -75,29 +75,32 @@ De verschillen in de pagina, zijn het grootst. Apple z'n huisstijl is erg hetzel
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### Pagina 1: 
+  ![Artboard 1](https://github.com/DBKoekkoek/Apple/assets/151542447/5999e3e3-a763-41d1-b0f4-eb045aeeabc7)
+  
+  ### Pagina 2: 
+  ![Artboard 1 copy](https://github.com/DBKoekkoek/Apple/assets/151542447/7b6a3545-66a0-4096-9617-6219b91efcd3)
+  
+  ### dynamisch deel (Het dropdown menu die ik moet maken voor mijn website): 
+  ![Artboard 3](https://github.com/DBKoekkoek/Apple/assets/151542447/d07f5595-801f-4cb1-9b28-cf2527dcee21)
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### wellicht nog een dynamisch deel (De slidshow van de Apple+ Films. Daarnaast nog een filmpje: 
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+![Artboard 5](https://github.com/DBKoekkoek/Apple/assets/151542447/a50fe73a-3ad9-4144-b6bd-208998c54968)
+![Artboard 4](https://github.com/DBKoekkoek/Apple/assets/151542447/07e1e719-5f66-4cce-8269-c43e736a0945)
+  
 </details>
 
-
+De grootste uitdaging is de slideshow. De slideshow is heb ik zelf nog nooit gemaakt, in mijn geval moet ik veel onderzoek doen om alles op orde te hebben. 
 
 
 
 ## Voortgang 1 (week 2)
 
 <details>
-  <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
-
+  
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik heb mijn header gemaakt en een start van mijn volgende artikel. Wat ik nu lastig vind is dat mijn beeld niet lekker loopt op mijn pagina. Daarnaast moet ik nog leren om een dropdown menu te maken. Tot nu toe gaat het makkelijk om alles via symantische code. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
