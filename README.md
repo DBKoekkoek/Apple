@@ -43,8 +43,10 @@ De manieren hoe ik deze elementen heb toegevoegd zal ik laten zien in mijn websi
 
   ### Je opdracht:
   Link Pagina 1: https://www.apple.com/
-
+  Link mijn pagina 1: http://127.0.0.1:5500/index.html#element1
+  
   Link Pagina 2: https://www.apple.com/ipad/why-ipad/
+  Link mijn pagina 2
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home page van Apple 
