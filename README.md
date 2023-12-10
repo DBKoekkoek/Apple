@@ -241,7 +241,6 @@ Link Pagina:
 
   ### Dit ging goed/Heb ik geleerd: 
   Het leren omgaan met HTML en de verschillende selectoren toepassen ging erg goed. In het begin vond ik het lastig om verschillende elementen te selecteren zonder classes of ID's. Maar nu kan ik meer selecteren in het algemeen zonder dat te gebruiken. Daarnaast ben ik meer bezig geweest met het uittesten van verschillende methodes van plaatsing, in mijn geval vooral position en soms grid. Animatie is beter gegaan met hulp van de docent. Als het gaat om positionering in het algemeen ging dat wel veel beter dan de eerste keren dat ik met code heb gewerkt. Het plaatsen van objecten ging een stuk makkelijker dan normaal. Mijn code is ook meer overzichtelijker dan normaal. Ik denk dat een andere goede dingen die ik geleerd heb is het werken met slideshows en hoe je fotos op verschillende manieren kan visualiseren (Waar ik ook moeite mee had)
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -260,9 +259,14 @@ Daarnaast was het maken van complexe onderdelen zoals hamburger menu's en caraso
 - Bepaalde Animaties (Zie hamburger menu list items)
 
 (Vrijwel meeste odnerdelen die tenmaken heeft met Java is niet helemaal gelukt)
+<img width="447" alt="Screenshot 2023-12-10 at 14 21 47" src="https://github.com/DBKoekkoek/Apple/assets/151542447/3d8e80
+<img width="833" alt="Screenshot 2023-12-10 at 14 21 33" src="https://github.com/DBKoekkoek/Apple/assets/151542447/6af51eae-7b2a-4f8f-b6d8-0c1753b50979">
+80-2317-4e23-8090-6ab2b419c429">
+<img width="99" alt="Screenshot 2023-12-10 at 14 20 55" src="https://github.com/DBKoekkoek/Apple/assets/151542447/e9f97d11-6094-4fb6-a906-1f67fd52601f">
+<img width="434" alt="Screenshot 2023-12-10 at 11 38 51" src="https://github.com/DBKoekkoek/Apple/assets/151542447/946ac775-f6a0-422c-a266-70e98545e758">
 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
 </details>
 
 
