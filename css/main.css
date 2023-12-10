@@ -1,0 +1,454 @@
+/* Generated content */
+*{
+    margin: 0;
+    margin-top: .5em;
+    padding: 0%;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /* Links met Alle layout */
+* a {
+    text-decoration: none;
+    color: #66a2df;
+ }
+
+ * a:link {
+    color: blue;
+ }
+
+ * a:visited {
+    color: #66a2df;
+ }
+
+ * a:focus {
+    color: #66a9df;
+ }
+
+ * a:active {
+    color:steelblue
+ }
+
+
+
+
+
+
+
+/* IMG */
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Position and Layout */
+button, input, textarea {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+button:link {
+    color: green;
+ }
+
+ button:visited {
+    color: #66a2df;
+ }
+
+button:focus :hover {
+    color: #66a9df;
+ }
+
+button:active {
+    color:steelblue
+ }
+
+
+
+header nav {
+    z-index: 3;
+    position: relative;
+    position: fixed;
+    top: -.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding-top: .5em ;
+    margin-top: -.5em;
+
+    background-color: rgba(20, 20, 20, .96); /* Red background with 50% opacity */
+}
+
+header nav svg {
+    z-index: 1;
+    position: relative;
+    width: 3em;
+    height: 3em;
+    margin: 0 0.2%;
+
+    fill: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+header nav svg:nth-child(1) {
+    flex-grow: 1;
+    margin-right: 15em;
+}
+
+/* Animatie voor SVG*/
+header nav svg:hover {
+    fill: white;
+}
+
+/* Hamburger menu icon animation */
+.nav-open .menu-icon {
+    transform: rotate(-45deg) translate(-0.3125em, 0.375em);
+}
+
+.nav-open .menu-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-open .menu-icon:nth-child(3) {
+    transform: rotate(45deg) translate(-0.3125em, -0.375em);
+}
+
+header nav .menu-icon {
+    z-index: -1;
+    position: fixed;
+    position: relative;
+    display: grid;
+
+    width: 3em; /* Adjust as needed */
+    height: 3em; /* Adjust as needed */
+
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    background: none;
+    place-content: center;
+
+    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+button:nth-of-type(1) span {
+    z-index: 1;
+    margin-top: -.3em;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    width: 1.125rem;
+    height: .1em; /* Thickness of each line */
+    background-color: #fff; /* Line color */
+    transition: translate .3s .15s, rotate .3s 0s;
+}
+
+.menu-icon span:nth-of-type(1) {
+    translate: 0 -.25em;
+    rotate: 0deg;
+}
+
+.menu-icon span:nth-of-type(2) {
+    translate: 0 .25em;
+    rotate: 0deg;
+}
+
+/* Animation for turning into X */
+.menu-icon.nav-open span {
+    transition: translate .3s 0s, rotate .3s .15s;
+}
+
+.menu-icon.nav-open span:nth-of-type(1) {
+    translate: 0 0;
+    rotate: 45deg;
+}
+
+.menu-icon.nav-open span:nth-of-type(2) {
+    translate: 0 0;
+    rotate: -45deg;
+}
+
+
+nav:nth-child(2) ul {
+    position: absolute;
+    top: -30em;
+    height: 28em;
+    width: 100%;
+    padding-top: 2em;
+
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+
+    scroll-behavior: none;
+
+    background-color: black;
+    color: white;
+
+
+    font-weight: 600;
+    font-size: 1.7em;
+    list-style: none;
+    color: white;
+}
+
+nav:nth-child(2).dropdown ul {
+    transform: translateY(29em);
+    transition: 1s;
+}
+
+nav:nth-child(2) ul li {
+    text-align: left;
+    padding-left: 1em;
+}
+
+nav:nth-child(2) ul li:hover::after {
+    content:'  > '; 
+    position: relative;
+
+    transition: translate .3s
+
+}
+
+
+
+
+
+
+/****************/
+/* FOOTER + */
+/****************/
+
+footer {
+    max-height: 66em;
+    background-color:rgb(230, 230, 230);
+ }
+ 
+ footer p {
+    padding: 1em 2em;
+
+    display: flex;
+    flex-direction: column;    
+    gap: 2em;
+
+
+    text-align: left;
+    font-weight: 100;
+    font-size: .68em;
+    line-height: 1.5em;
+    font-size: .8em;
+    color:rgb(100, 100, 100) ;
+ }
+
+ footer section a {
+    justify-content: left;
+    text-align: left;
+
+
+ }
+ 
+ 
+
+
+
+/****************/
+/* Modes + */
+/****************/
+
+
+
+/* Dark mode + */
+/****************/
+ body.dark-mode {
+    background-color: black;
+    background: black;
+    
+    color: white;
+  }
+
+  .dark-mode img {
+    opacity: 9;
+  }
+
+  .dark-mode article:nth-child(4) ul:nth-child(1) {
+    background-image: url(../foto/Home/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    opacity: 9;
+ 
+ }
+ 
+ .dark-mode article:nth-child(4) ul:nth-child(2) {
+    color: white;
+    background-image: url(../foto/Home/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg);
+ }
+ 
+ .dark-mode article:nth-child(4) ul:nth-child(3) {
+    color: white;
+    background-image: url(../foto/Home/hero_apple_watch_series_9_order__d0fi9mb84dci_largetall.jpg);
+ }
+ 
+ .dark-mode article:nth-child(4) ul:nth-child(4) {
+    background-image: url(../foto/Home/hero_iphone15_announce__uuemlcwczn6u_largetall.jpg);
+ }
+ 
+
+  nav:nth-child(2) section button:nth-child(2) {
+    color: red;
+  }
+
+  nav:nth-child(2) section button:nth-child(2):hover {
+    color: orange;
+    background-color: blue; 
+    transform:scale(1.6)
+}
+
+/* Light mode + */
+/****************/
+.light-mode {
+    background-color: black;
+    color: white;
+  }
+
+  nav:nth-child(2) section button:nth-child(1) {
+    color: blue;
+  }
+
+  nav:nth-child(2) section button:nth-child(1):hover {
+    color: brown;
+    background-color: blue;
+
+    border-top-left-radius: 2em; /* Left half-circle */
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em; /* Right half-circle */
+    border-bottom-right-radius: 2em;
+
+    transform: rotate(12deg);
+
+    
+  }
+
+
+/* Custom mode + */
+/****************/
+body.custom-mode {
+    border: 1em;
+    border-width: 1em;
+
+    background-color: Green;
+    color: red;
+  }
+
+  nav:nth-child(2) section button:nth-child(3) {
+    color: green;
+  }
+
+  nav:nth-child(2) section button:nth-child(3):hover {
+    color: white;
+    background-color: red; 
+    transform:scaleX(1.4);
+
+}
+
+  nav:nth-child(2) section  {
+    text-align: left;
+    padding-left: 1em;
+ }
+
+
+  nav:nth-child(2) section button {
+    text-align: left;
+    
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    
+    background-color: white;
+    border-top-left-radius: 1.4em; /* Left half-circle */
+    border-bottom-left-radius: 1.4em;
+    border-top-right-radius: 1.4em; /* Right half-circle */
+    border-bottom-right-radius: 1.4em;
+    border: none;
+ 
+    color: black;
+    font-weight: 400;
+    font-size: medium;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+/* Custom properties voor systeem + */
+/****************/
+  @media(prefers-color-scheme:dark) {
+    :root {
+    --hoofdKleur:white;
+    --accentKleur:blue;
+    --backgroundColor :black;
+    }
+    }
+
+
+
+
+    body.dark-mode {
+        background-color: black;
+        color: white;
+
+    }
+
+
+    body.dark-mode img {
+        opacity: 0.7;
+        
+    }
+
+    body.light-mode {
+        background-color: white;
+        color: black;
+    }
+
+
+
+
+
+
+
+    body.custom-mode {
+        background-color: green;
+        color: red;
+    }
+
+    body.dark-mode img {
+        opacity: 0.7;
+        fill-opacity: var(--accentKleur);
+        
+    }
