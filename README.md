@@ -86,7 +86,8 @@ Waar ik aan wil werken is symantische code die klopt volgens de dingen die wij g
   ![Artboard 1](https://github.com/DBKoekkoek/Apple/assets/151542447/5999e3e3-a763-41d1-b0f4-eb045aeeabc7)
   
   ### Pagina 2: 
-  ![Artboard 1 copy](https://github.com/DBKoekkoek/Apple/assets/151542447/7b6a3545-66a0-4096-9617-6219b91efcd3)
+  <img width="451" alt="Screenshot 2023-12-10 at 14 36 21" src="https://github.com/DBKoekkoek/Apple/assets/151542447/b30e135d-4fe7-4b0f-9d79-bcaade2b718c">
+
   
   ### dynamisch deel (Het dropdown menu die ik moet maken voor mijn website): 
   ![Artboard 3](https://github.com/DBKoekkoek/Apple/assets/151542447/d07f5595-801f-4cb1-9b28-cf2527dcee21)
