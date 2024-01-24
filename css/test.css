@@ -7,182 +7,172 @@
  }
 
 
-  
-  /******************************/
-  /* DE CAROCARROUSEL CONTAINER */
-  /******************************/
-  
-  .caroCarrousel {
-      /* basis waarden die door de hele carrousel gebruikt worden */
-      /* kun je zelf aanpassen */
-      --caroCarrouselMainColor:#333;
-    --caroCarrouselAccentColor:#1b75b3;
-      --caroCarrouselShadeColor:#ddd9;
-    --caroCarrouselInverseColor:#e48a4c;
-    
-    --caroCarrouselAutoScrollInterval:4000;
-  
-    position: relative;
-      outline:none;
-  }
-  
-  /* dark mode */
-  @media (prefers-color-scheme: dark) {
-    .caroCarrousel {
-      --caroCarrouselMainColor:#ccc;
-      --caroCarrouselShadeColor:#4449;
-    }
-  }
-  
-  
-  /************************************/
-  /* de carrousel elementen container */
-  .caroCarrousel > ul {
-    margin: 0; padding: 0;
-    list-style: none;
-      display: flex;
-      gap: 1em;
-      
-      /* handmatig scrollen is mogelijk */
-      overflow: hidden;
-      
-      /* snappen als er gescrolled wordt - andere helft bij li */
-    scroll-snap-type: inline mandatory;
-    
-    /* smooth als met js gescrolled wordt */
-      scroll-behavior: smooth;
-      overflow-y: hidden;
-    
-    /* scrollbar zoveel mogelijk verbergen */
-    -webkit-overflow-scrolling: touch; /* voor iOS*/
-    -ms-overflow-style: none; /* voor IE */
-      scrollbar-width: none; /* voor firefox */
-      background-color: #1b75b3;
-  }
-  
-  .caroCarrousel > ul::-webkit-scrollbar {
-    /* scrollbar zoveel mogelijk verbergen */
-    display: none; /* voor chrome, safari en edge*/
-  }
-  
-  
-  /**************************/
-  /* de carrousel elementen */
-  .caroCarrousel > ul li {
-    flex-basis: 50%;
-    flex-shrink: 0;
-    /* snappen als er gescrolled wordt - andere helft bij ul */
-      scroll-snap-align:center;
-  }
-  
-  
-  /**********************************/
-  /* de carrousel elementen content */
-  
-  /* de stijlen voor jouw content hier */
-  .caroCarrousel > ul li > img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
 
+  
+/******************************/
+/* DE CAROCARROUSEL CONTAINER */
+/******************************/
+
+.caroCarrousel ul:nth-child(1) {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  background-color: aqua;
+
+  height: 30em;
+
+  overflow: hidden;
+  scroll-snap-type: inline mandatory;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  color: white;
+}  
+
+
+.caroCarrousel ul:nth-child(1) h3 {
+  padding-top: 11em;
+  font-size: 1.8em;
+}
+
+.caroCarrousel ul:nth-child(1) p {
+  font-size: .9em;
+  padding-top: .5em;
+}
+
+.caroCarrousel ul:nth-child(1) a {
+  position: relative;
+  top: 1em;
+  padding: .3em 1.8em;
+
+  justify-content: center;
+
+  border-style: none;
+  border-top-left-radius: 1.7em; /* Left half-circle */
+  border-bottom-left-radius: 1.7em;
+  border-top-right-radius: 1.7em; /* Right half-circle */
+  border-bottom-right-radius: 1.7em;
+  background-color: white;
+  
+  font-weight: 200;
+  color: black;
+}
+
+.caroCarrousel ul:nth-child(1) li {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  scroll-snap-align:center;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(1){
+  background-image: url(../foto/Home/1.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(2){
+  background-image: url(../foto/Home/2.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(3){
+  background-image: url(../foto/Home/3.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(4){
+  background-image: url(../foto/Home/4.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(5){
+  background-image: url(../foto/Home/6.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(6){
+  background-image: url(../foto/Home/5.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(7){
+  background-image: url(../foto/Home/8.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(8){
+  background-image: url(../foto/Home/9.jpg);
+}
+
+.caroCarrousel ul:nth-child(1) li:nth-child(9){
+  background-image: url(../foto/Home/10.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+/* DE BOLLETJES */
+/****************/
+.caroCarrousel ul:nth-child(2) {
+list-style: none;
+
+background-color: aquamarine;
+height: 3.2em;
+
+display: flex;
+
+justify-content: center;
+gap:.1em;
+}
+
+
+/* een bolletje container */
+.caroCarrousel  ul:nth-child(2) li {
+  flex-basis: 1em; 
+}
+
+
+/* de bolletjes */
+.caroCarrousel ul:nth-child(2) a {
+  position: relative;
+  top: 1em;
+  padding: .2em .9em;
+  margin: .4em;
+
+  border-top-left-radius: 1.7em; /* Left half-circle */
+  border-bottom-left-radius: 1.7em;
+  border-top-right-radius: 1.7em; /* Right half-circle */
+  border-bottom-right-radius: 1.7em;
+  background-color: white;
 }
   
-
-    /**********************************/
-  /* de carrousel elementen content */
-    /**********************************/
-
-  .caroCarrousel ul li div {
-    position: relative;
-    bottom: 10em;
-
-    text-align: center;
-    color: white;
-    padding: 0 2em;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  /****************/
-  /* DE BOLLETJES */
-  /****************/
-  
-  /* de bolletjes container */
-  .caroCarrousel nav ul {
-    position: absolute;
-      left: 2em; right: 2em;
-      bottom: 0;
-      margin: 0;
-    padding: 0 0 .5em;
-    list-style: none;
-      
-      display: flex;
-
-
-
-
-  /* 	flex-wrap:wrap; */
-    justify-content: center;
-    gap:.4em;
-  }
-
-
-
-  
-  /* een bolletje container */
-  .caroCarrousel > nav li {
-      flex-basis: 1.2em;
-      aspect-ratio: 1/1;
-  }
-
-
-
-  
-  /* de bolletjes */
-  .caroCarrousel > nav a {
-    display: block;
-    width:100%;
-    height:100%;
-    
-    text-decoration: none;
-      color: var(--caroCarrouselMainColor);
-    background-color: var(--caroCarrouselShadeColor);
-      border-radius: 50%;
-    outline: none;
-      box-shadow: inset 0 0 0 1px currentColor;
-    
-    transition: 0.5s;
-  }
-  
-  .caroCarrousel > nav a:hover,
-  .caroCarrousel > nav a:focus {
+  .caroCarrousel ul:nth-child(2) a:hover,
+  .caroCarrousel  ul:nth-child(2) a:focus {
     color: var(--caroCarrouselAccentColor);
   }
   
-  .caroCarrousel > nav a.current {
+  .caroCarrousel ul:nth-child(2) a.current {
     background-color: currentColor;
   }
   
-  .caroCarrousel > nav a:hover,
-  .caroCarrousel > nav a:focus {
+  .caroCarrousel ul:nth-child(2) a:hover,
+  .caroCarrousel ul:nth-child(2) a:focus {
     color: var(--caroCarrouselAccentColor);
   }
   
-  .caroCarrousel > nav a.current {
+  .caroCarrousel nav a.current {
     background-color: currentColor;
   }
   
+
+
+
 
 
 
@@ -199,7 +189,7 @@
   /* PLAY/PAUSE BUTTON */
   /*********************/
   
-  .caroCarrousel > button {
+  /* .caroCarrousel > button {
     position: absolute;
     right: .5em;
     bottom: .5em;
@@ -229,7 +219,6 @@
     color: var(--caroCarrouselAccentColor);
   }
   
-  /* play/pause button */
   .caroCarrousel > button::before,
   .caroCarrousel > button::after {
     content: "";
@@ -240,8 +229,6 @@
     transition:transform 0.5s;
   }
   
-  /* indien niet aan het auto-scrollen */
-  /* de streepjes vormen een play-icoon */
   .caroCarrousel > button::before {
       transform: translateY(0) rotate(45deg);
   }
@@ -249,8 +236,6 @@
       transform: translateY(0) rotate(-45deg);
   }
   
-  /* indien aan het auto-scrollen */
-  /* de streepjes vormen een pauze-icoon */
   .caroCarrousel.autoScrolling > button::before {
       transform: translateY(-2px);
   }
@@ -258,7 +243,6 @@
       transform: translateY(2px);
   }
   
-  /* in de button draait een 'eierwekker' */
   .caroCarrousel.autoScrolling > button {
       animation-name: carrouselAutoScrollingButton;
     animation-duration: calc(var(--caroCarrouselAutoScrollInterval) * 1ms);
@@ -328,4 +312,4 @@
       98%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 98%, transparent 0%); }
       
       100%{ background-image: conic-gradient(var(--caroCarrouselInverseColor) 100%, transparent 0%); }
-  }
+  } */

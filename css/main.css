@@ -1,144 +1,85 @@
-/* Generated content */
-*{
-    margin: 0;
-    margin-top: .5em;
-    padding: 0%;
+/****************/
+/* Grote aanpassingen */
+/****************/
 
+/* algemeen style */
+* {
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
- }
+}
 
-
-
-
-
-
-
-
-
-
-
- /* Links met Alle layout */
-* a {
-    text-decoration: none;
-    color: #66a2df;
- }
-
- * a:link {
-    color: blue;
- }
-
- * a:visited {
-    color: #66a2df;
- }
-
- * a:focus {
-    color: #66a9df;
- }
-
- * a:active {
-    color:steelblue
- }
-
-
-
-
-
-
-
-/* IMG */
+/* image */
 img {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-/* Position and Layout */
-button, input, textarea {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
 }
 
-button:link {
-    color: green;
- }
-
- button:visited {
-    color: #66a2df;
- }
-
-button:focus :hover {
-    color: #66a9df;
- }
-
-button:active {
-    color:steelblue
- }
 
 
 
+
+
+
+/****************/
+/* Navigatie */
+/****************/
+
+/* positioneren nav */
 header nav {
-    z-index: 3;
-    position: relative;
+    z-index: 10;
+
     position: fixed;
-    top: -.1em;
+    top: -1em;
+    height: 4.5em;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     width: 100%;
-    padding-top: .5em ;
-    margin-top: -.5em;
 
-    background-color: rgba(20, 20, 20, .96); /* Red background with 50% opacity */
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.96);
 }
 
+/* svg styling */
 header nav svg {
     z-index: 1;
     position: relative;
     width: 3em;
     height: 3em;
-    margin: 0 0.2%;
-
-    fill: rgb(230, 230, 230);
+    
+    fill: rgb(210, 210, 210);
+    
     cursor: pointer;
 }
 
-header nav svg:nth-child(1) {
-    flex-grow: 1;
-    margin-right: 15em;
+/* Apple logo positionering */
+header nav svg:first-child {
+    margin-right: auto;
 }
 
-/* Animatie voor SVG*/
+
+/* Hamburger menu icon animatie */
 header nav svg:hover {
     fill: white;
 }
 
-/* Hamburger menu icon animation */
-.nav-open .menu-icon {
-    transform: rotate(-45deg) translate(-0.3125em, 0.375em);
-}
-
-.nav-open .menu-icon:nth-child(2) {
-    opacity: 0;
-}
-
-.nav-open .menu-icon:nth-child(3) {
-    transform: rotate(45deg) translate(-0.3125em, -0.375em);
-}
-
-header nav .menu-icon {
-    z-index: -1;
+/* hamburger menu button styling */
+header nav button {
     position: fixed;
     position: relative;
     display: grid;
 
-    width: 3em; /* Adjust as needed */
-    height: 3em; /* Adjust as needed */
+    margin-bottom: .2em;
+
+    width: 3em; 
+    height: 3em; 
 
     cursor: pointer;
     appearance: none;
@@ -146,88 +87,137 @@ header nav .menu-icon {
     background: none;
     place-content: center;
 
-    transition: transform 0.3s ease; /* Add a transition for smooth animation */
+    transition: transform 0.3s ease;
 }
 
-button:nth-of-type(1) span {
-    z-index: 1;
-    margin-top: -.3em;
-
+/* styling van de lijn */
+header nav button span {
     grid-column-start: 1;
     grid-row-start: 1;
 
-    width: 1.125rem;
-    height: .1em; /* Thickness of each line */
-    background-color: #fff; /* Line color */
+    width: 1.15rem;
+    height: .14em; 
+
+    background-color: #fff; 
     transition: translate .3s .15s, rotate .3s 0s;
 }
 
-.menu-icon span:nth-of-type(1) {
-    translate: 0 -.25em;
+/* animatie */
+header nav button span:nth-of-type(1) {
+    translate: 0 -.25em; /* Gemaakt met Sanne, werkt niet zonder foutmelding */
     rotate: 0deg;
 }
 
-.menu-icon span:nth-of-type(2) {
+/* animatie */
+header nav button span:nth-of-type(2) {
     translate: 0 .25em;
     rotate: 0deg;
 }
 
-/* Animation for turning into X */
-.menu-icon.nav-open span {
+/* AAnimatie naar X (@css elementen)*/
+header nav button.nav-open span {
     transition: translate .3s 0s, rotate .3s .15s;
 }
 
-.menu-icon.nav-open span:nth-of-type(1) {
+/* AAnimatie naar X (@css elementen)*/
+header nav button.nav-open span:nth-of-type(1) {
     translate: 0 0;
     rotate: 45deg;
 }
 
-.menu-icon.nav-open span:nth-of-type(2) {
+/* AAnimatie naar X (@css elementen)*/
+header nav button.nav-open span:nth-of-type(2) {
     translate: 0 0;
     rotate: -45deg;
 }
 
 
+
+
+
+
+
+/****************/
+/* Dropdown Menu */
+/****************/
+
+/* Stijl van dropdown menu & eerste locatie)*/
 nav:nth-child(2) ul {
+    z-index: 9;
+
     position: absolute;
-    top: -30em;
+    top: -35em;
     height: 28em;
     width: 100%;
-    padding-top: 2em;
 
     display: flex;
     flex-direction: column;
-    gap: .2em;
-
-    scroll-behavior: none;
+    gap: .1em;
 
     background-color: black;
-    color: white;
-
 
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.6em;
     list-style: none;
     color: white;
 }
 
-nav:nth-child(2).dropdown ul {
-    transform: translateY(29em);
-    transition: 1s;
-}
-
+/* Li plaatsing*/
 nav:nth-child(2) ul li {
+    position: relative;
+    top: 2em;
+
     text-align: left;
     padding-left: 1em;
 }
 
+nav:nth-child(2) ul li a {
+    color: white;
+}
+
+
+/*******************************************************************************************/
+/*voor mijn opdracht om te laten zien dat ik verschillende stijlen kan gebruiken*/
+nav:nth-child(2) ul li button {
+    text-align: center;
+
+    width: 5em;
+    height: 2em;
+    
+    background-color: white;
+    border-top-left-radius: 1.4em; /* Left half-circle */
+    border-bottom-left-radius: 1.4em;
+    border-top-right-radius: 1.4em; /* Right half-circle */
+    border-bottom-right-radius: 1.4em;
+    border: none;
+}
+
+nav:nth-child(2) button:hover {
+    background-color: #66a9df;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+    content: none;
+}
+
+/* Animatie van dropdown menu, er zit een class in de css om het te laten werken*/
+nav:nth-child(2).dropdown ul {
+    transform: translateY(36.5em);
+    transition: 1s;
+}
+
+/* Hover animatie met een ">")*/
 nav:nth-child(2) ul li:hover::after {
-    content:'  > '; 
+    letter-spacing: 4em;
+    content:' > '; 
     position: relative;
 
     transition: translate .3s
-
 }
+
+
+
+
 
 
 
@@ -262,134 +252,72 @@ footer {
  footer section a {
     justify-content: left;
     text-align: left;
-
-
  }
  
  
+
+
+
+
+
+
 
 
 
 /****************/
-/* Modes + */
+/* Thema's + */
 /****************/
 
-
-
-/* Dark mode + */
-/****************/
- body.dark-mode {
-    background-color: black;
-    background: black;
-    
-    color: white;
-  }
-
-  .dark-mode img {
-    opacity: 9;
-  }
-
-  .dark-mode article:nth-child(4) ul:nth-child(1) {
-    background-image: url(../foto/Home/promo_iphone_tradein__bugw15ka691e_large.jpg);
-    opacity: 9;
- 
- }
- 
- .dark-mode article:nth-child(4) ul:nth-child(2) {
-    color: white;
-    background-image: url(../foto/Home/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg);
- }
- 
- .dark-mode article:nth-child(4) ul:nth-child(3) {
-    color: white;
-    background-image: url(../foto/Home/hero_apple_watch_series_9_order__d0fi9mb84dci_largetall.jpg);
- }
- 
- .dark-mode article:nth-child(4) ul:nth-child(4) {
-    background-image: url(../foto/Home/hero_iphone15_announce__uuemlcwczn6u_largetall.jpg);
- }
- 
-
-  nav:nth-child(2) section button:nth-child(2) {
-    color: red;
-  }
-
-  nav:nth-child(2) section button:nth-child(2):hover {
-    color: orange;
-    background-color: blue; 
-    transform:scale(1.6)
-}
-
-/* Light mode + */
-/****************/
-.light-mode {
+/*Dark mode*/
+body.dark-mode {
     background-color: black;
     color: white;
-  }
-
-  nav:nth-child(2) section button:nth-child(1) {
-    color: blue;
-  }
-
-  nav:nth-child(2) section button:nth-child(1):hover {
-    color: brown;
-    background-color: blue;
-
-    border-top-left-radius: 2em; /* Left half-circle */
-    border-bottom-left-radius: 2em;
-    border-top-right-radius: 2em; /* Right half-circle */
-    border-bottom-right-radius: 2em;
-
-    transform: rotate(12deg);
-
-    
-  }
-
-
-/* Custom mode + */
-/****************/
-body.custom-mode {
-    border: 1em;
-    border-width: 1em;
-
-    background-color: Green;
-    color: red;
-  }
-
-  nav:nth-child(2) section button:nth-child(3) {
-    color: green;
-  }
-
-  nav:nth-child(2) section button:nth-child(3):hover {
-    color: white;
-    background-color: red; 
-    transform:scaleX(1.4);
-
 }
 
-  nav:nth-child(2) section  {
-    text-align: left;
-    padding-left: 1em;
- }
+body.dark-mode img {
+    opacity: 0.7;
+    fill-opacity: var(--accentKleur);  
+}
 
-
-  nav:nth-child(2) section button {
-    text-align: left;
-    
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    
+/*Light mode*/
+body.light-mode {
     background-color: white;
-    border-top-left-radius: 1.4em; /* Left half-circle */
-    border-bottom-left-radius: 1.4em;
-    border-top-right-radius: 1.4em; /* Right half-circle */
-    border-bottom-right-radius: 1.4em;
-    border: none;
- 
     color: black;
-    font-weight: 400;
-    font-size: medium;
- }
+}
+
+body.light-mode nav {
+    background-color: white;
+    color: black;
+}
+
+
+body.light-mode svg {
+    fill: black;
+}
+
+body.light-mode svg:hover {
+    fill: darkgrey;
+}
+
+body.light-mode span {
+    background-color: black;
+}
+
+
+/*Custom*/
+body.custom-mode {
+    font-stretch: expanded;
+}
+
+body.custom-mode article {
+    background-color: green;
+    color: blue;
+}
+
+body.custom-mode nav {
+    background-color: orange;
+    color: pink;
+}
 
 
 
@@ -414,27 +342,7 @@ body.custom-mode {
     --accentKleur:blue;
     --backgroundColor :black;
     }
-    }
-
-
-
-
-    body.dark-mode {
-        background-color: black;
-        color: white;
-
-    }
-
-
-    body.dark-mode img {
-        opacity: 0.7;
-        
-    }
-
-    body.light-mode {
-        background-color: white;
-        color: black;
-    }
+}
 
 
 
@@ -442,13 +350,45 @@ body.custom-mode {
 
 
 
-    body.custom-mode {
-        background-color: green;
-        color: red;
-    }
 
-    body.dark-mode img {
-        opacity: 0.7;
-        fill-opacity: var(--accentKleur);
-        
-    }
+/****************/
+/* Syling per onderdeel + */
+/****************/
+
+/* A*/
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: #66a2df;
+}
+
+a:focus {
+    color: #66a9df;
+}
+
+a:active {
+    color: steelblue;
+}
+
+
+/* Button*/
+button:link {
+    color: blue;
+}
+
+button:visited {
+    color: blue;
+}
+
+button:focus {
+    color: #66a9df;
+}
+
+button:active {
+    color: steelblue;
+}
+
+
+

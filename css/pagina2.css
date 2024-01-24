@@ -1,44 +1,46 @@
-
-
 /****************/
-/* Header */
+/* start/eerste artikel */
 /****************/
 
-article:nth-child(2) {
-    background-color: rgba(245,245,247,255);
-    margin-top: -.5em;
+/* styling */
+article:nth-child(3){
+    background-color: rgb(245,244,247);
+    position: relative;
+    top: 2em;
 
+    height: 50em;
 }
-article:nth-child(2) h1 {
-    order: 1;
 
-    font-size: 1.3em;
+/* h1 */
+article:nth-child(3) h1 {
+    font-size: 1.9em;
     font-weight: 500;
-
 }
 
-article:nth-child(2) p {
+/* P (Soort van title 1) */
+article:nth-child(3)  p {
     padding: 0 1em;
-
-    order: 2;
 
     font-size: 2.5em;
     font-weight: 600;
 }
 
-article:nth-child(2) img {
+/* Image (alleen de eerste) */
+article:nth-child(3) img:first-child {
     height: 16em;
-    width: auto;
 
-    order: 1;
     text-align: center;
     object-fit: cover;
-    background-repeat: none;
 }
 
+/* Tekst voor onder */
+article:nth-child(3) h2 {
+    padding: 0 1.2em;
 
-
-
+    font-weight: 700;
+    font-size: 1.4em;
+    color: black;
+}
 
 
 
@@ -49,38 +51,42 @@ article:nth-child(2) img {
 
 
 /* **************
-/* Article 2 */
+/* tweede artikel */
 /****************/
-
-section:nth-child(3){
-    margin-top: -.5em;
-
-
-    height: 31em;
-
-    background-color: rgba(245,245,247,255);
-}
-
-section:nth-child(3) p {
-    padding-top: 0em;
-    padding: 0 1.3em;
-    font-size: 1.2em;
-    color: grey;
-    line-height: 1.5em;
-}
-
-
-/* **************
-/* Article 3 */
-/****************/
-
 article:nth-child(4) {
+    position: relative;
+    top: 1em;
+
+    height: 40em;
     margin-top: -.9em;
-    padding-top: 1;
-
     background-color: rgba(245,245,247,255);
-
 }
+
+
+article:nth-child(4) h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+article:nth-child(4) p {
+    padding: 0 1em;
+
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+article:nth-child(4) p:nth-child(4) {
+    padding: 0 1em;
+
+    font-style: oblique;
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+
+
+
 
 
 
@@ -102,31 +108,28 @@ article:nth-child(4) {
 /* Article GROEN ACHTERGROND */
 /****************/
 
-article:nth-child(5) {
-    background-color: rgba(245,245,247,255);
+article:nth-child(5) { 
+    background-color: rgb(245,244,247);
     height: 40em;
     text-align: left;
     padding-left:  2em;
-    margin-top: -.5em;
-
-
+    margin-top: 1em;
 }
 
 article:nth-child(5) section {
-
     z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    height: 40em;
     background: linear-gradient(180deg, rgba(0,32,6,1) 0%, rgba(0,15,7,1) 49%, rgba(1,0,20,1) 100%);    
-    height: 37em;
     width: 75%;
     padding: 0 2em;
-    border-top-left-radius: 1.4em; /* Left half-circle */
-    border-bottom-left-radius: 1.4em;
-    border-top-right-radius: 1.4em; /* Right half-circle */
-    border-bottom-right-radius: 1.4em;
+    border-top-left-radius: 1.7em; /* Left half-circle */
+    border-bottom-left-radius: 1.7em;
+    border-top-right-radius: 1.7em; /* Right half-circle */
+    border-bottom-right-radius: 1.7em;
 }
 
 article:nth-child(5) section h4 {
@@ -141,7 +144,7 @@ article:nth-child(5) section h4 {
 }
 
 article:nth-child(5) section p {
-        top: 2.4em;
+    top: 2.4em;
     order: 1;
 
     text-align: left;
